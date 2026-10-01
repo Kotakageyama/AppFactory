@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+.factory-state.json
+.factory-state.json.tmp
+.factory.lock
+.neon
+node_modules/

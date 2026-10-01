@@ -1,0 +1,19 @@
+name: __APP_NAME__
+
+gcp:
+  project: __GCP_PROJECT__
+  region: __GCP_REGION__
+  artifact_repository: __ARTIFACT_REPOSITORY__
+
+cloud_run:
+  cpu: 1
+  memory: 512Mi
+  min_instances: 0
+  max_instances: 2
+  allow_unauthenticated: true
+
+secrets:
+  database_secret: __DATABASE_SECRET__
+  common:
+    - OPENAI_API_KEY
+    - GOOGLE_MAPS_API_KEY
